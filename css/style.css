@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900,900i&display=swap');
+@font-face {
+    font-family: 'brandon_grotesqueblack';
+    src: url('../fonts/brandon-grotesque-black.woff2') format('woff2'),
+         url('brandon-grotesque-black.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+/*Preloader*/
+
+#preloader{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:#ccc;
+    position:fixed;
+    z-index: 16000;
+  }
+  
+  #name{
+    color: #0e1119;
+    font-family:'Poppins',sans-serif;
+    font-weight:500;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    letter-spacing:.5rem;
+    font-size:21px;
+  }
+/*Preloader*/
+
+/*Header*/
+nav{
+	padding: 50px 30px;
+	font-family: 'brandon_grotesqueblack';
+}
+.logo{
+	display: inline-block;
+	font-size: 22px;
+}
+.resume{
+	text-align: right;
+	font-size: 22px;
+}
+/*Header*/
+
+/*Profile*/
+.home-profile{
+	border-bottom: 1px solid #ccc;
+}
+.profile{
+	padding: 10% 1% 1% 1%;
+	/*border-bottom: 1px solid #ccc;*/
+}
+.profile img{
+	float: right;
+	border-radius: 50%;
+	transform: rotate(-10deg);
+}
+.profile img:hover{
+	-webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    transform: rotate(350deg);
+}
+.name{
+	margin: 20px 0 10px 0;
+	font-family: 'brandon_grotesqueblack';
+	
+}
+.name h2{
+	font-size: 50px;
+}
+.subtitle{
+	font-family: 'brandon_grotesqueblack';
+	
+}
+.subtitle h4{
+	font-size: 28px;
+}
+.subtitle:after{
+	margin: 50px 0;
+	content: '';
+	width: 50px;
+    border-bottom: 1px solid #ccc;
+    display: block;
+}
+.social-div{
+	margin: 30px 0 30px 0 ;
+}
+.hashtag{
+	text-align: center;
+	font-family: 'brandon_grotesqueblack';
+}
+.icon-box{
+	padding: 5% 2% 1% 5%;
+	border: 2px solid #000;
+	border-radius: 1rem;
+}
+.social-icon{
+	margin: 49px 0 78px 0px;
+	
+}
+.social-icon i{
+	font-size: 20px;
+	padding: 10px;
+	background: #ffeb3b;
+	border-radius: 5px;
+	margin-right: 3px;
+
+}
+.icon-text{
+	display: inline-block;
+}
+.icon-text p{
+	display: inline-block;
+}
+.down-arrow{
+	margin-top: 10%;
+	text-align: center;
+	
+}
+.down-arrow img{
+	transform: rotate(90deg);
+}
+.down-arrow img:hover{
+	top: 10px;
+	transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+/*Profile*/
