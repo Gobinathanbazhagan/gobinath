@@ -189,4 +189,32 @@ nav{
 .about-box{
 	padding: 50px 10px 30px 10px;
 }
+.about-txt p{
+	font-size: 18px;
+}
+.about-title{
+	padding: 1em 0;
+	margin-bottom: 1em;
+}
+.about-title h3{
+	font-weight: 23px;
+	font-weight: bold;
+}
+.about-txt ul li {
+  margin: 0;
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+  position: relative;
+}
+.about-txt ul li:after {
+  content: '';
+  height: .4em;
+  width: .4em;
+  background: #D2153A;
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 0.55em;
+  left: 0;
+}
 /*About*/
