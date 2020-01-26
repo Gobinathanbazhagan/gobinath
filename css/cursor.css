@@ -31,7 +31,7 @@ body * {
 .cursor-dot {
   width: 8px;
   height: 8px;
-  background-color: #000;
+  background-color:var(--font-color);
     z-index: 6500;
 }
 
@@ -39,7 +39,7 @@ body * {
   width: 40px;
   height: 40px;
   background-color: transparent;
-  border: 2px solid #000;
+  border:2px solid var(--font-color);
     z-index: 6500;
 }
 

@@ -6,6 +6,61 @@
     font-weight: 100;
     font-style: normal;
 }
+html{
+    scroll-behavior: smooth;
+    cursor:none;
+}
+
+:root {
+    --primary-color: #424242;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #292922;
+    --icon-box-color: #424242;
+    --btn-color: #fff;
+}
+
+[data-theme="dark"] {
+    --primary-color: #fff;
+    --secondary-color: #818cab;
+    --font-color: #fff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+    --icon-box-color: #a59d9d;
+    --btn-color: #424242;
+}
+.socialmedia ul li a img{
+    transition: .2s all ease-in-out;
+  }
+  
+  .socialmedia ul li a img:hover{
+      margin-top: -2rem;
+      transition: .2s all ease-in-out;
+    }
+
+body{-webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+    cursor:none; background-color: var(--bg-color);color: var(--font-color);}
+*{cursor:none;}
+
+body::before{-webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;}
+
+body::after{-webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;}    
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
 body{
 	font-family: 'Lato', sans-serif;
 }
@@ -130,7 +185,7 @@ nav{
 }
 .icon-box{
 	padding: 5% 2% 1% 5%;
-	border: 2px solid #000;
+	border:2px solid var(--icon-box-color);
 	border-radius: 1rem;
 }
 .social-icon{
@@ -150,6 +205,18 @@ nav{
 }
 .icon-text p{
 	display: inline-block;
+}
+.fa-instagram:before{
+  color: #000;
+}
+.fa-dribbble:before{
+  color: #000;
+}
+.fa-github:before{
+  color: #000;
+}
+.fa-linkedin:before{
+  color: #000;
 }
 .down-arrow{
 	margin-top: 10%;
@@ -218,3 +285,113 @@ nav{
   left: 0;
 }
 /*About*/
+
+
+/*Skills*/
+
+.skills-section{
+  padding: 5% 0 5% 0;
+}
+
+.skill-head h3{
+  font-size: 38px;
+  font-family: 'brandon_grotesqueblack';
+  text-align: center;
+}
+
+.skill-box{
+  padding: 50px 20px 30px 20px;
+}
+.skill-text h4{
+  font-weight: 23px;
+  font-weight: bold;
+  padding: 5% 0;
+}
+.skill-text p{
+  font-size: 18px;
+}
+.img-skill{
+  padding-top: 50%;
+}
+.tech-box{
+  padding: 25%;
+}
+.tech-box img{
+  display: block;
+}
+.tech-box p{
+  text-align: center;
+  margin-top: 5px;
+}
+/*Skills*/
+
+/*Works*/
+.works-section{
+  padding: 5% 0 5% 0;
+}
+
+/*Works*/
+
+/*contact*/
+
+.contact-section{
+  padding: 5% 0 5% 0;
+}
+
+.contact-head h3{
+  font-size: 38px;
+  font-family: 'brandon_grotesqueblack';
+  text-align: center;
+}
+
+.contact-box{
+  padding: 50px 20px 30px 20px;
+  text-align: center;
+}
+
+.btn-primary{
+  background: transparent;
+  border-color: var(--icon-box-color);
+  color: var(--primary-color);
+}
+.btn-primary:hover{
+  background: var(--primary-color);
+  border: 1px solid var(--icon-box-color);
+  color: var(--btn-color);
+}
+
+.btn-primary:focus{
+  background: var(--primary-color);
+  border: 1px solid var(--icon-box-color);
+  
+}
+.btn-primary:not(:disabled):not(.disabled):active{
+   background: #ffeb3b;
+   color: #000;
+}
+.contact-img{
+  text-align: center;
+  padding-top: 5%;
+}
+/*contact*/
+
+/*Dark_Mode*/
+
+
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .theme-switch input {
+    display:none;
+  }
+
+  .moonboi{font-size: 2rem;transition: .4s;}
+  .moonboi::before{transition: .4s;}
+  
+
+
+/*Dark_Mode*/
