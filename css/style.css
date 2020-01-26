@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @font-face {
     font-family: 'brandon_grotesqueblack';
     src: url('../fonts/brandon-grotesque-black.woff2') format('woff2'),
@@ -19,6 +20,7 @@ html{
     --heading-color: #292922;
     --icon-box-color: #424242;
     --btn-color: #fff;
+    --office-color:#3b64ff;
 }
 
 [data-theme="dark"] {
@@ -29,6 +31,7 @@ html{
     --heading-color: #818cab;
     --icon-box-color: #a59d9d;
     --btn-color: #424242;
+    --office-color:#ffeb3b;
 }
 .socialmedia ul li a img{
     transition: .2s all ease-in-out;
@@ -154,6 +157,9 @@ nav{
     transition: all 0.4s ease 0s;
     transform: rotate(350deg);
 }
+.dark-right{
+  float: right;
+}
 .name{
 	margin: 20px 0 10px 0;
 	font-family: 'brandon_grotesqueblack';
@@ -168,6 +174,10 @@ nav{
 }
 .subtitle h4{
 	font-size: 28px;
+}
+.office{
+  color: var(--office-color);
+  font-weight: bold;
 }
 .subtitle:after{
 	margin: 50px 0;
@@ -205,6 +215,7 @@ nav{
 }
 .icon-text p{
 	display: inline-block;
+  color: var(--primary-color);
 }
 .fa-instagram:before{
   color: #000;
@@ -251,6 +262,7 @@ nav{
 }
 .about-section{
 	padding: 5% 0 5% 0;
+  font-family: 'Montserrat', sans-serif;
 
 }
 .about-box{
@@ -291,6 +303,7 @@ nav{
 
 .skills-section{
   padding: 5% 0 5% 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .skill-head h3{
@@ -303,9 +316,9 @@ nav{
   padding: 50px 20px 30px 20px;
 }
 .skill-text h4{
-  font-weight: 23px;
+  font-size: 23px;
   font-weight: bold;
-  padding: 5% 0;
+  padding: 5% 0 2% 0;
 }
 .skill-text p{
   font-size: 18px;
@@ -328,14 +341,39 @@ nav{
 /*Works*/
 .works-section{
   padding: 5% 0 5% 0;
+  font-family: 'Montserrat', sans-serif;
 }
-
+.works-sample{
+  padding: 2rem;
+  transition: all 0.4s ease 0s;
+}
+.works-sample:hover{
+  box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.works-text{
+  margin-top: 1em;
+  text-align: left;
+}
+.works-text h4{
+  font-size: 20px;
+}
+.works-text p{
+  font-size: 15px;
+}
+.works-box{
+  padding: 10% 0 0 0;
+}
 /*Works*/
 
 /*contact*/
 
 .contact-section{
   padding: 5% 0 5% 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .contact-head h3{
@@ -349,25 +387,15 @@ nav{
   text-align: center;
 }
 
-.btn-primary{
+.button-primary{
   background: transparent;
   border-color: var(--icon-box-color);
   color: var(--primary-color);
 }
-.btn-primary:hover{
+.button-primary:hover{
   background: var(--primary-color);
   border: 1px solid var(--icon-box-color);
   color: var(--btn-color);
-}
-
-.btn-primary:focus{
-  background: var(--primary-color);
-  border: 1px solid var(--icon-box-color);
-  
-}
-.btn-primary:not(:disabled):not(.disabled):active{
-   background: #ffeb3b;
-   color: #000;
 }
 .contact-img{
   text-align: center;
@@ -391,7 +419,6 @@ nav{
 
   .moonboi{font-size: 2rem;transition: .4s;}
   .moonboi::before{transition: .4s;}
-  
 
 
 /*Dark_Mode*/
