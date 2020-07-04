@@ -425,7 +425,7 @@ div a:hover{
     display:none;
   }
 
-  .moonboi{font-size: 2rem;transition: .4s;}
+  .moonboi{font-size: 2rem;transition: .4s;transform: rotate(160deg);}
   .moonboi::before{transition: .4s;}
 
 

@@ -39,6 +39,8 @@ if (currentTheme) {
   
     if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
+        currentIcon.classList.add('zmdi-sun');
+        currentIcon.classList.remove('zmdi-brightness-2');
     }
 }
 
