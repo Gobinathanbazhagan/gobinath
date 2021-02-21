@@ -46,7 +46,9 @@ body{-webkit-transition: all 0.5s ease-in-out 0s;
     -moz-transition: all 0.5s ease-in-out 0s;
     -o-transition: all 0.5s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s;
-    cursor:none; background-color: var(--bg-color);color: var(--font-color);}
+    cursor:none; background-color: var(--bg-color);color: var(--font-color);
+    overflow-x: hidden;
+  }
 *{cursor:none;}
 
 body::before{-webkit-transition: all 0.5s ease-in-out 0s;
@@ -344,7 +346,6 @@ nav{
   font-family: 'Montserrat', sans-serif;
 }
 .works-sample{
-  padding: 2rem;
   transition: all 0.4s ease 0s;
 }
 .works-sample:hover{
@@ -363,9 +364,11 @@ nav{
 }
 .works-text p{
   font-size: 15px;
+  width: 90%;
+  padding: 10px 0;
 }
 .works-box{
-  padding: 10% 0 0 0;
+  padding: 8% 0 0 0;
 }
 div a{
   color: inherit;
@@ -399,6 +402,7 @@ div a:hover{
   background: transparent;
   border-color: var(--icon-box-color);
   color: var(--primary-color);
+  width: 110px;
 }
 .button-primary:hover{
   background: var(--primary-color);
