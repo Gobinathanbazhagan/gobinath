@@ -156,7 +156,7 @@ nav{
     -moz-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
-    transform: rotate(350deg);
+    transform: rotate(360deg);
 }
 .dark-right{
   float: right;
